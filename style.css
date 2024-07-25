@@ -150,8 +150,11 @@ header {
 #Home {
     width: 100%;
     min-height: 100vh;
+    /* padding-left: 12rem;
+    padding-right: 12rem; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: rgb(255, 234, 207);
 }
 
@@ -159,15 +162,15 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 15rem;
+    gap: 10rem;
 }
 
-.container {padding-left: 4rem;}
+/* .container {padding-left: 4rem;} */
 
 .slider {
     padding-top: 4rem;
     position: relative;
-    width: 300px;
+    max-width: 650px;
     height: fit-content;
     overflow: hidden;
 }
@@ -479,6 +482,9 @@ footer a:hover {color: rgb(229, 134, 8);}
     .homePage {flex-direction: column;}
     .container {padding-left: 0rem;}
     .scrollBtn {padding-top: 5rem;}
+    .slider {
+        max-width: 400px;
+    }
     #blogs, #breeds {
         align-items: center;
         display: grid;
