@@ -555,7 +555,7 @@ footer a:hover {color: rgb(229, 134, 8);}
     .homePage {
         gap: 0rem;
         .homeDetails {
-            .homeTitle {font-size: 1.85rem; line-height: 45px;}
+            .homeTitle {font-size: 1.75rem; line-height: 40px;}
             .homeMarginTitle {font-size: medium;  line-height: 25px;}
         }
         .sliderBtn {
