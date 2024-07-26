@@ -103,11 +103,12 @@ blogs.forEach((item) => {
         <style>
             .blogCard {
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
                 height: 27rem; 
-                padding: 1.5rem; 
+                width: 25rem; 
+                padding: 1rem; 
                 border-radius: 2.5rem;
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
                 transition: 350ms;
@@ -121,8 +122,8 @@ blogs.forEach((item) => {
                     }
                 }
                 .blogImage {
-                    width: 250px;
-                    height: 250px;
+                    width: 75%;
+                    height: 75%;
                     border-radius: 0.5rem;
                 }
             }
@@ -133,6 +134,11 @@ blogs.forEach((item) => {
             @media (max-device-width: 800px){
                 .blogCard {
                     width: 100%;
+                }
+            }
+            @media (max-device-width: 500px){
+                .blogCard {
+                    flex-direction: row-reverse;
                 }
             }
             
