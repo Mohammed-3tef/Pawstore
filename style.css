@@ -11,7 +11,598 @@
 section, footer {padding: 2rem 6.5rem; min-width: 100vh;}
 
 @keyframes growreading {
+    to {width: 100%;}@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+}
+
+section, footer {padding: 2rem 6.5rem;}
+
+@keyframes growreading {
     to {width: 100%;}
+}
+.reading {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(229, 134, 8);
+    animation: growreading linear;
+    animation-timeline: scroll(root);
+}
+
+/* ========================================>> Header <<======================================== */
+
+header {
+    padding: 1rem 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(255, 234, 207);
+    span {display: none; cursor: pointer; font-size: x-large;}
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    .logoTitle {
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: rgb(236, 235, 235);
+    overflow-x: hidden;
+    transition: 0.55s;
+    align-content: center;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 27.5px;
+      color: #818181;
+      display: block;
+      transition: 0.35s;
+    }
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 50px;
+      margin-left: 50px;
+    }
+  }
+
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        transition: 250ms;
+    }
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+  
+.search__input {
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    max-width: 276px;
+    max-height: 45px;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+}
+  
+.search__input:hover, .search__input:focus {box-shadow: 0 0 1em #00000013;}
+  
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+  
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+}
+  
+.search__input:focus + .search__button {background-color: #f0eeee;}
+  
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+}
+  
+.search__button:hover {cursor: pointer;}
+  
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+}
+
+.sidenav a:hover, .navBar a:hover {color: rgb(229, 134, 8);}
+
+/* ========================================>> Home <<======================================== */
+
+#Home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 234, 207);
+}
+
+.homePage {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    z-index: 5;
+}
+
+.slider {
+    padding-top: 4rem;
+    position: relative;
+    max-width: 750px;
+    height: fit-content;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.sliderBtn {
+    display: flex;
+    justify-content: space-between;
+    button {
+        font-size: 2.5rem;
+        text-align: center;
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+
+.scrollBtn {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    justify-content: center;
+    .scrollDown {
+        border-radius: 50% 50%;
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        filter: drop-shadow(0 0 0.25rem gray);
+        i {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }    
+}
+
+.homeDetails {
+    .homeTitle {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 54px;
+    }
+    
+    .homeMarginTitle {
+        padding: 1.25rem 0rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+.buyMe, .seeMore, .subscribe {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: rgb(229, 134, 8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px, 24px, 8px, 24px;
+    width: 130px;
+    height: 48px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+   
+.buyMe span, .seeMore span, .subscribe span {
+    font-family: Montserrat;
+    font-size: 18.66px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;        
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+   
+.buyMe span:after, .seeMore span:after, .subscribe span:after  {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+   
+.buyMe:hover span, .seeMore:hover span, .subscribe:hover span {padding-right: 15px;}
+   
+.buyMe:hover span:after, .seeMore:hover span:after, .subscribe:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ========================================>> Dog Breeds & Pet Products <<======================================== */
+
+.dogBreedDetails {text-align: center;}
+
+.dogBreed {padding-top: 4rem;}
+
+#breeds {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-bottom: 5rem;
+}
+
+.sectionTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 54px;
+}
+.marginTitle {
+    padding-top: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.petProducts{
+    display: flex;
+    padding: 2.5rem 0rem;
+    gap: 10rem;
+    .petProductsDtails {
+        .marginTitle {
+            padding: 3rem 0rem;
+        }
+    }
+    .petProductsImages {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        img {
+            transition: 450ms;
+            border-radius: 5px;
+        }
+    }
+}
+
+.petProductsImages img:hover {filter: drop-shadow(0 0 0.25rem gray); border-radius: 10px;}
+
+/* ========================================>> Blog Section <<======================================== */
+
+.blogSection {padding-bottom: 5rem;}
+.blogSectionDetails {text-align: center;}
+
+#blogs {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pawsomeNews {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: rgb(255, 234, 207);
+    min-height: fit-content;
+    border-radius: 50px;
+    img {margin-top: -5rem;}
+    .enterEmail {
+        width: 100%;
+        max-width: 370px;
+        height: 45px;
+        padding: 12px;
+        border-radius: 12px;
+        border: 1.5px solid lightgrey;
+        outline: none;
+        transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0px 0px 20px -18px;
+    }
+    .enterEmail:hover {
+        border: 2px solid lightgrey;
+        box-shadow: 0px 0px 20px -17px;
+    }
+      
+    .enterEmail:active {
+        transform: scale(0.95);
+    }
+      
+    .enterEmail:focus {
+        border: 2px solid grey;
+    }
+}
+
+
+/* ========================================>> Footer <<======================================== */
+
+footer {
+    background-color: rgba(246, 250, 255, 1);
+    padding-top: 3.5rem;
+    a {
+        color: black;
+        text-decoration: none;
+        transition: 350ms;
+    }
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .location {
+        min-width: 50%;
+        min-height: 40%;
+        align-content: center;
+    }
+    iframe {
+        border-radius: 10px; 
+        min-width: 100%;
+        min-height: 100%;
+        border: 0;
+    }
+}
+
+.footer2 {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+}
+
+footer a:hover {color: rgb(229, 134, 8);}
+
+/* ========================================>> Responsive <<======================================== */
+
+/* ==============>> Tablet */
+
+/* =======>> Computer | | Laptop */
+@media only screen and (max-width: 1024px){
+    * {text-align: center;}
+    section, footer {padding-right: 50px; padding-left: 50px;}
+    header {
+        padding: 20px 70px;
+        span {display: block; font-size: xx-large;}
+        .navBar {display: none;}
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .container {padding-left: 0rem;}
+    .homePage {flex-direction: column; gap: 3.5rem;}
+    
+    #blogs, #breeds {
+        align-items: center;
+        display: grid;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    #breeds {grid-template-columns: repeat(3, 1fr);}
+    #blogs {grid-template-columns: repeat(2, 1fr);}
+    
+    .petProducts {
+        flex-direction: column;
+        .petProductsImages {
+            justify-content: center;
+        }
+    }
+    .pawsomeNews {
+        padding: 2.5rem;
+        img {
+            max-width: 40%;
+            max-height: 40%;
+        }
+    }
+    .footer1 {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        .links {
+            display: flex; 
+            justify-content: space-between; 
+            flex-direction: row; 
+            gap: 0rem;
+        }
+    }
+    .footer2 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* =======>> Tablet */
+@media (max-device-width: 800px){
+    * {text-align: center;}
+    section, footer {padding-left: 1.75rem; padding-right: 1.75rem;}
+    header {
+        padding: 1rem 2.5rem;
+        span {display: block; font-size: x-large;}
+        .navBar {display: none;}
+    }
+    .homePage {flex-direction: column;}
+    .slider {
+        max-width: 200px;
+    }
+    .search {display: none;}
+    .scrollBtn {display: none;}
+    #blogs, #breeds {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .petProducts {
+        flex-direction: column;
+    }
+    .pawsomeNews {
+        padding: 2.5rem;
+        img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+    }
+    .footer1 {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        .links {
+            display: flex; 
+            justify-content: space-between; 
+            flex-direction: row; 
+            gap: 0rem;
+        }
+    }
+    .footer2 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* ==============>> Mobile */
+/* =======>> Computer | | Laptop */
+@media only screen and (max-width: 600px){
+    #blogs {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #breeds {grid-template-columns: repeat(2, 1fr);}
+    
+    .pawsomeNews {
+        flex-direction: column;
+        img {
+            max-width: 75%;
+            max-height: 75%;
+        }
+        .search {
+            justify-content: center;
+        }
+    }
+}
+
+/* =======>> Phone */
+@media (max-device-width: 500px){
+    .homePage {
+        gap: 0rem;
+        .homeDetails {
+            .homeTitle {font-size: 1.85rem; line-height: 45px;}
+            .homeMarginTitle {font-size: medium;  line-height: 25px;}
+        }
+        .sliderBtn {
+            padding-bottom: 1.25rem;
+            button {font-size: 1.5rem;}
+        }
+    }
+    .sidenav a{font-size: 1.25rem;}
+    #breeds {gap: 0rem;}
+    .pawsomeNews {
+        flex-direction: column;
+        .sectionTitle {font-size: 1.75rem;  line-height: 35px;}
+        .marginTitle {font-size: 1rem;  line-height: 25px;}
+        img {
+            max-width: 95%;
+            max-height: 95%;
+        }
+        .search {
+            justify-content: center;
+        }
+    }
+    .footer1 {
+        .links{
+            flex-direction: column; 
+        }
+        iframe {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .footer2 {
+        .CR {font-size: smaller;}
+    }
+}
 }
 .reading {
     position: absolute;
