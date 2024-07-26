@@ -483,7 +483,7 @@ footer a:hover {color: rgb(229, 134, 8);}
     * {text-align: center;}
     section, footer {padding-left: 1.75rem; padding-right: 1.75rem;}
     header {
-        padding: 1rem 2.5rem;
+        padding: 0.75rem 2.5rem;
         span {display: block; font-size: x-large;}
         .navBar {display: none;}
     }
