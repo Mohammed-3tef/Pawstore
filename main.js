@@ -62,7 +62,7 @@ dogsBreeds.forEach((dog) => {
         <style>
             .dogCard {
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
                 height: 14rem; 
@@ -84,7 +84,11 @@ dogsBreeds.forEach((dog) => {
                     border-radius: 0.5rem;
                 }
             }
-            
+            @media (max-device-width: 800px){
+                .dogCard {
+                    max-width: fit-content;
+                }
+            }
             a:hover {color: rgb(229, 134, 8);}
         </style>
     `
@@ -95,7 +99,7 @@ blogs.forEach((item) => {
     `
         <div class="blogCard">
             <img src="${item.image}" class="blogImage" alt="Blog Section">
-            <div>
+            <div style="padding-bottom: 2rem;">
                 <a href=""> <p class="blogName">${item.details}</p> </a>
             </div>
         </div>
@@ -105,10 +109,10 @@ blogs.forEach((item) => {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 height: 27rem; 
                 width: 25rem; 
-                padding: 1rem; 
+                padding: 0rem 1rem; 
                 border-radius: 2.5rem;
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
                 transition: 350ms;
@@ -134,11 +138,7 @@ blogs.forEach((item) => {
             @media (max-device-width: 800px){
                 .blogCard {
                     width: 100%;
-                }
-            }
-            @media (max-device-width: 500px){
-                .blogCard {
-                    flex-direction: row-reverse;
+                    line-height: 32px;
                 }
             }
             
@@ -152,7 +152,7 @@ blogs.forEach((item) => {
 });
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "40%";
+    document.getElementById("mySidenav").style.width = "50%";
 }
 
 function closeNav() {
