@@ -8,7 +8,7 @@
     font-family: Poppins;
 }
 
-section, footer {padding: 2rem 6.5rem;}
+section, footer {padding: 1.75rem 6.5rem;}
 
 @keyframes growreading {
     to {width: 100%;}
@@ -163,6 +163,7 @@ header {
 }
 
 .slider {
+    /* padding-top: 4rem; */
     position: relative;
     max-width: 750px;
     height: fit-content;
@@ -274,7 +275,7 @@ header {
 
 .dogBreedDetails {text-align: center;}
 
-.dogBreed {padding-top: 4rem;}
+.dogBreed {padding-top: 2rem;}
 
 #breeds {
     display: flex;
@@ -298,11 +299,11 @@ header {
 
 .petProducts{
     display: flex;
-    padding: 2.5rem 0rem;
+    padding: 2rem 0rem;
     gap: 10rem;
     .petProductsDtails {
         .marginTitle {
-            padding: 3rem 0rem;
+            padding: 2.5rem 0rem;
         }
     }
     .petProductsImages {
@@ -326,7 +327,7 @@ header {
 
 #blogs {
     padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     display: flex;
     gap: 2rem;
     display: flex;
@@ -489,7 +490,7 @@ footer a:hover {color: rgb(229, 134, 8);}
     }
     .homePage {flex-direction: column;}
     .slider {
-        max-width: 175px;
+        max-width: 200px;
     }
     .search {display: none;}
     .scrollBtn {display: none;}
@@ -501,12 +502,13 @@ footer a:hover {color: rgb(229, 134, 8);}
     }
     .petProducts {
         flex-direction: column;
+        gap: 5rem;
     }
     .pawsomeNews {
-        padding: 2.5rem;
+        padding: 2.25rem;
         img {
-            max-width: 50%;
-            max-height: 50%;
+            max-width: 60%;
+            max-height: 60%;
         }
     }
     .footer1 {
