@@ -163,7 +163,6 @@ header {
 }
 
 .slider {
-    padding-top: 4rem;
     position: relative;
     max-width: 750px;
     height: fit-content;
@@ -490,7 +489,7 @@ footer a:hover {color: rgb(229, 134, 8);}
     }
     .homePage {flex-direction: column;}
     .slider {
-        max-width: 200px;
+        max-width: 175px;
     }
     .search {display: none;}
     .scrollBtn {display: none;}
