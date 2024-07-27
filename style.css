@@ -198,7 +198,7 @@ header {
     bottom: 5%;
     left: 50%;
     justify-content: center;
-    animation: bounce 2000ms infinite ease-in-out;
+    animation: bounce 2250ms infinite ease-in-out;
     .scrollDown {
         border-radius: 50% 50%;
         width: 4rem;
