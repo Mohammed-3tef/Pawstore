@@ -299,6 +299,7 @@ header {
 
 .petProducts{
     display: flex;
+    max-width: 100%;
     padding: 2rem 0rem;
     gap: 10rem;
     .petProductsDtails {
