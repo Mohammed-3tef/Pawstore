@@ -198,6 +198,7 @@ header {
     bottom: 5%;
     left: 50%;
     justify-content: center;
+    animation: bounce 2000ms infinite ease-in-out;
     .scrollDown {
         border-radius: 50% 50%;
         width: 4rem;
@@ -269,6 +270,18 @@ header {
 .buyMe:hover span:after, .seeMore:hover span:after, .subscribe:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
 }
 
 /* ========================================>> Dog Breeds & Pet Products <<======================================== */
