@@ -50,34 +50,37 @@
     <main>
     
         <section class="home" id="Home">
-            
-            <div class="homePage">
-                <div class="container">
-                    <div class="slider">
-                        <div class="slides">
-                            <img src="Images/transparent-picture-dog-4.png" alt="Image 1" class="slide">
-                            <img src="Images/transparent-picture-dog-4.png" alt="Image 2" class="slide">
-                            <img src="Images/transparent-picture-dog-4.png" alt="Image 3" class="slide">
-                            <img src="Images/transparent-picture-dog-4.png" alt="Image 4" class="slide">
-                            <img src="Images/transparent-picture-dog-4.png" alt="Image 5" class="slide">
+            <div class="maxWidth">
+                
+                <div class="homePage">
+                    <div class="container">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="Images/transparent-picture-dog-4.png" alt="Image 1" class="slide">
+                                <img src="Images/transparent-picture-dog-4.png" alt="Image 2" class="slide">
+                                <img src="Images/transparent-picture-dog-4.png" alt="Image 3" class="slide">
+                                <img src="Images/transparent-picture-dog-4.png" alt="Image 4" class="slide">
+                                <img src="Images/transparent-picture-dog-4.png" alt="Image 5" class="slide">
+                            </div>
+                        </div>
+                        
+                        <div class="sliderBtn">
+                            <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                     
-                    <div class="sliderBtn">
-                        <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
-                        <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                    
+                    <div class="homeDetails">
+                        <p class="homeTitle">Everybody needs a friend in Life.</p>
+                        <p class="homeMarginTitle">The Corgi is intelligent, quick and curious. It is a kind, adventurous breed which shows a large measure of independence. They are good with children and normally kind with strangers.</p>
+                        
+                        <button class="buyMe" type="submit">
+                            <span>Buy Me</span>
+                        </button>
                     </div>
                 </div>
                 
-                
-                <div class="homeDetails">
-                    <p class="homeTitle">Everybody needs a friend in Life.</p>
-                    <p class="homeMarginTitle">The Corgi is intelligent, quick and curious. It is a kind, adventurous breed which shows a large measure of independence. They are good with children and normally kind with strangers.</p>
-                    
-                    <button class="buyMe">
-                        <span>Buy Me</span>
-                    </button>
-                </div>
             </div>
             
             <div class="wrapper1" style="position: absolute; bottom: 15%; right: 0;">
@@ -113,104 +116,113 @@
     
     
         <section class="dogBreedAndpetProducts" id="dogBreed&petProducts">
-            <div class="dogBreed">
-                <div class="dogBreedDetails">
-                    <p class="sectionTitle">Dog Breed</p>
-                    <p class="marginTitle">Find yourself a perfect freind from a wide variety of choices.</p>
-                    <div id="breeds"></div>
+            <div class="maxWidth">
+                
+                <div class="dogBreed">
+                    <div class="dogBreedDetails">
+                        <p class="sectionTitle">Dog Breed</p>
+                        <p class="marginTitle">Find yourself a perfect freind from a wide variety of choices.</p>
+                        <div id="breeds"></div>
+                    </div>
+                    
+                    
                 </div>
                 
-                
-            </div>
-            
-            <div class="petProducts">
-                <div class="petProductsDtails">
-                    <p class="sectionTitle">Pet Products</p>
-                    <p class="marginTitle">All products are designed for ease of use and durable, as well as looking good. You can choose your own colours to make your item unique.</p>
-                    <button class="seeMore">
-                        <span>See More</span>
-                    </button>
+                <div class="petProducts">
+                    <div class="petProductsDtails">
+                        <p class="sectionTitle">Pet Products</p>
+                        <p class="marginTitle">All products are designed for ease of use and durable, as well as looking good. You can choose your own colours to make your item unique.</p>
+                        <button class="seeMore">
+                            <span>See More</span>
+                        </button>
+                    </div>
+                    
+                    <div class="petProductsImages">
+                        <img src="Images/Dog1.svg" alt="">
+                        <img src="Images/Dog2.svg" alt="">
+                        <img src="Images/Dog3.svg" alt="">
+                        <img src="Images/Dog4.svg" alt="">
+                        <img src="Images/Dog5.svg" alt="">
+                        <img src="Images/Dog6.svg" alt="">                    
+                    </div>
                 </div>
                 
-                <div class="petProductsImages">
-                    <img src="Images/Dog1.svg" alt="">
-                    <img src="Images/Dog2.svg" alt="">
-                    <img src="Images/Dog3.svg" alt="">
-                    <img src="Images/Dog4.svg" alt="">
-                    <img src="Images/Dog5.svg" alt="">
-                    <img src="Images/Dog6.svg" alt="">                    
-                </div>
             </div>
         </section>
         
         <section class="blogSection">
-            <div>
-                <div class="blogSectionDetails">
-                    <p class="sectionTitle">Blog Section</p>
-                    <p class="marginTitle">Desctiprion of blog</p>
+            <div class="maxWidth">
+                <div>
+                    <div class="blogSectionDetails">
+                        <p class="sectionTitle">Blog Section</p>
+                        <p class="marginTitle">Desctiprion of blog</p>
+                    </div>
+                    
+                    <div id="blogs">
+                        
+                    </div>
                 </div>
                 
-                <div id="blogs">
-                    
+                <div class="pawsomeNews">
+                    <img src="Images/PawsomeDog.svg" alt="">
+                    <div class="pawsomeNewsDetails">
+                        <form action="">
+                            <p class="sectionTitle">Get Pawsome News!</p>
+                            <p class="marginTitle">Exclusive training tips, ticks, product deals and more.</p>
+                            <div style="padding: 2rem 0rem;">
+                                <input placeholder="Enter email..." type="email" class="enterEmail" required>
+                            </div>
+                            <button class="subscribe" type="submit">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="pawsomeNews">
-                <img src="Images/PawsomeDog.svg" alt="">
-                <div class="pawsomeNewsDetails">
-                    <form action="">
-                        <p class="sectionTitle">Get Pawsome News!</p>
-                        <p class="marginTitle">Exclusive training tips, ticks, product deals and more.</p>
-                        <div style="padding: 2rem 0rem;">
-                            <input placeholder="Enter email..." type="email" class="enterEmail" required>
-                        </div>
-                        <button class="subscribe" type="submit">
-                            <span>Subscribe</span>
-                        </button>
-                    </form>
-                </div>
+                
             </div>
         </section>
         
     </main>
     
     <footer>
-    
-        <div class="footer1">
-            <div class="links">
-                <ul><a href="#Home">Home</a></ul>
-                <ul><a href="">About</a></ul>
-                <ul><a href="">Services</a></ul>
-                <ul><a href="">Team</a></ul>
-                <ul><a href="">FAQs</a></ul>
-                <ul><a href="">Careers</a></ul>
-                <ul><a href="">Contact Us</a></ul>
-            </div>
+        <div class="maxWidth">
             
-            <div class="contactUs">
-                <p class="sectionTitle">Contact</p>
-                <div class="contactDetails">
-                    <p>Mahendrapool</p>
-                    <p>Pokhara, Nepal</p>
-                    <a href="">+977-[0]61-328463</a>
+            <div class="footer1">
+                <div class="links">
+                    <ul><a href="#Home">Home</a></ul>
+                    <ul><a href="">About</a></ul>
+                    <ul><a href="">Services</a></ul>
+                    <ul><a href="">Team</a></ul>
+                    <ul><a href="">FAQs</a></ul>
+                    <ul><a href="">Careers</a></ul>
+                    <ul><a href="">Contact Us</a></ul>
+                </div>
+                
+                <div class="contactUs">
+                    <p class="sectionTitle">Contact</p>
+                    <div class="contactDetails">
+                        <p>Mahendrapool</p>
+                        <p>Pokhara, Nepal</p>
+                        <a href="">+977-[0]61-328463</a>
+                    </div>
+                </div>
+                
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.453655348088!2d83.99279662527854!3d28.223907202520813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595002715c441%3A0x6b780a57fac86e64!2sMahendrapool%20pokhara!5e0!3m2!1sar!2seg!4v1721910732532!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             
-            <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.453655348088!2d83.99279662527854!3d28.223907202520813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595002715c441%3A0x6b780a57fac86e64!2sMahendrapool%20pokhara!5e0!3m2!1sar!2seg!4v1721910732532!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer2">
+                <p class="CR">Copyright @ 2021 GrandmaBakery</p>
+                <div class="social">
+                    <ul><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></ul>
+                    <ul><a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a></ul>
+                    <ul><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a></ul>
+                </div>
+                <p>Created by Brandbuilder</p>
             </div>
+            
         </div>
-        
-        <div class="footer2">
-            <p class="CR">Copyright @ 2021 GrandmaBakery</p>
-            <div class="social">
-                <ul><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></ul>
-                <ul><a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a></ul>
-                <ul><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a></ul>
-            </div>
-            <p>Created by Brandbuilder</p>
-        </div>
-    
     </footer>
     
     <script src="main.js"></script>
